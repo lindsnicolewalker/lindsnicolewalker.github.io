@@ -1,53 +1,463 @@
-<!--doctype declaration-->
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
-<!--link related css files and est title-->
 <head>
-  <meta charset="UTF-8">
-   <title>About | Lindsey Walker</title>
-  <link rel="stylesheet" type="text/css" href="assets/reset.css"> 
-  <link rel="stylesheet" href="assets/style.css">
+  <title>Lindsey Portfolio 2019</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+  <!-- LOCAL -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- HOSTED -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+  <!-- LOCAL -->
+  <script src="scripts/index.js"></script>
+
 </head>
 
-<!--header with logo and nav links-->
 <body>
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Lindsey Walker</a>
-        <nav>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+  <div class="overflow-wrap">
+
+    <section id="home" class="flex height-fix">
+
+      <div id="pt" class="canvas"></div>
+      <div class="flex">
+
+        <div
+          style="font-weight:bold; padding: 70px; background-color:rgba(0,0,0, .2); color:rgba(255, 255, 255, 0.7); box-shadow: 10px 10px 100px grey;"
+          class="text">
+          Hello, my name is <span style="text-shadow: 1px 1px black;" class="highlight">Lindsey Walker</span>. I'm a web
+          developer.
+        </div>
+        <div
+          style="border:1px solid rgba(0, 0, 0, .7);font-weight:bold;background-color:rgba(250,250,250,.5); color:rgba(0, 0, 0, .7);"
+          class="button page-link" dest="about">My Code</div>
+
+        <nav class="flex">
+          <div class="link-wrap">
+            <div class="active page-link" dest="home">home</div>
+            <div class="page-link" dest="about">bio</div>
+            <div class="page-link" dest="portfolio">projects</div>
+            <div class="page-link" dest="blog">blog</div>
+            <div class="page-link" dest="technologies">technologies</div>
+          </div>
         </nav>
-    </div>
-  </header><br><br><br>
 
-<!--"About Me" box with portfolio image and bio-->
-<div class="row">
-<div class="col-lg-6">
-  <h1>About Me</h1>
+      </div>
 
-<div class="row"> 
-<div class="col-sm-4">  	  
-<img class="image" src="assets/portfoliopic.jpg"  alt="Lindsey Walker">After recently earning my AA in mathematics, I realized that
- while I had a real ability with numbers and theories, I had more of a passion for tech. Having no real influences in my immediate 
- family or social circle, I took my interest to the web for hours on end, for months (as many do) to gain a base understanding of how 
- languages, front end, back end, data base, API, UI, and security, all interact for user experience. Learning how to learn with a 
- career aimed trajectory was the biggest challenge. I’ve felt as though stuck in the learning loop for too long. It is time to network,
-  pursue career opportunities and build ideas into products using the skills of a Full Stack Developer. 
-</div>
-</div>
-</div>
-</div>
+    </section>
 
-<!--footer with copyright-->
-<footer>
-  <div class="container">
-    Copyright &copy; 2018 Lindsey Walker
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container flex">
+
+        <br>
+        <div class="header waypoint" data-animation="slide-in-left">CODE</div><br><br><br>
+
+        <div class="flex row label-wrap">
+          <div class="flex row-gt-sm">
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                <span style="font-size: 2em; color:black;">
+                  <i style="height: 20px;" class="fas fa-globe"></i>
+                </span>
+
+              </div>
+              <div class="waypoint" data-animation="fade-in">
+                <div class="label bold">Scalable</div>
+                <div>Architecture that can scale up <br> to meet increased work loads.</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+                <span style="font-size: 2em; color:black;">
+                  <i class="fas fa-mobile"></i>
+                </span>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                <div class="label bold">Responsive</div>
+                <div>Web pages render well on <br> a variety of devices.</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+                <span style="font-size: 2em; color:black;">
+                  <i class="fas fa-tools"></i>
+                </span>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                <div class="label bold">Competitive</div>
+                <div>Dynamic web applications<br> that stand out</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br><br><br>
+        <div class="header waypoint" data-animation="slide-in-left">BIO</div><br><br><br>
+
+
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+
+            <div class="overlay-container">
+              <img style="height:475px;" src="img/me.jpg" class="me">
+              <div class="portrait-overlay">
+                <div class="overlay-text">
+                  <div class="highlight">ABOUT</div><br>
+                  I studied mathematics at DVC and then front end
+                  and back end tech at UC Berkeley Coding Bootcamp 2018-19. Currently I am working
+                  on a web app with the target audience of self taught web developers which allows
+                  members access to open source, free resources such as online classes and tutorials
+                  that are organized in the most logical procession. The app aims to solve the question
+                  of where to begin, where to go from there, and so on, prepping the self-taught learner
+                  for a career level mastery of modern tech. Check it out <a style="color:goldenrod"
+                    href="https://github.com/lindsnicolewalker/root-route">here</a>. On the side, I spend time outdoors: hiking
+                  and practicing yoga. Namaste. <br><br>
+                  <span class="page-link highlight" >linds.nicolewalker17@gmail.com</span>
+                  <a class="page-link highlight" href="https://github.com/lindsnicolewalker">https://github.com/lindsnicolewalker</a>
+
+                 </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- BAR CHART FOR SKILLS -->
+
+          <!-- <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">JavaScript</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">Bootstrap</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">SQL/ MySQL</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">Firebase</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">JawsDB</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
+                <div class="tag bold flex">Mongo</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">JSON</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">Git</div>
+              </div>
+            </div>
+
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
+                <div class="tag bold flex">React</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">Node.js</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">UI Design</div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        </div>
+        <br><br><br><br><br>
+        <div style="color:black" class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
+
+
+    </section>
+
+
+    <!-- PORTFOLIO -->
+    <section class="flex" id="portfolio">
+
+      <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".restapi">REST API</div>
+          <div class="filter" data-filter=".mvc">MVC Architecture</div>
+          <div class="filter" data-filter=".js">JavaScript</div>
+
+
+          <!-- same navbar as ^^ but when you click a new category, highlight changes to active tab-->
+        </div>
+        <div class="float-bar">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".restapi">RESTAPI</div>
+            <div class="filter" data-filter=".mvc">MVCArchitecture</div>
+            <div class="filter" data-filter=".js">JavaScript</div>
+
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div id="gallery" class="waypoint">
+        <div class="mix mvc" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Habbit Rabbit</div>
+              <span class="highlight">
+                + Javascript
+                + Node.js
+                + Express.js
+                + Handlebars
+                + Heroku
+                + MVC</span>
+            </div>
+            <a href="https://stark-basin-75217.herokuapp.com/" target="_blank">
+              <div class="button" id="habbitrabbit">VIEW APP</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix restapi" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">DayVenture</div>
+              <span class="highlight">
+                + JavaScript
+                + Ajax
+                + Firebase
+                + Rest API</span>
+            </div>
+            <a href="https://lindsnicolewalker.github.io/dayVenture/" target="_blank">
+              <div class="button" id="dayventure">VIEW APP</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix node" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Burger</div>
+              <span class="highlight">
+                + JavaScript
+                + Node.js
+                + Sequelized
+                + Express
+                + Handlebars
+                + Heroku
+                + MVC</span>
+            </div>
+            <a href="https://secret-beach-37555.herokuapp.com/" target="_blank">
+              <div class="button" id="burger">VIEW APP</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix restapi" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">DayVenture</div>
+              <span class="highlight">
+                + JavaScript
+                + Ajax
+                + Firebase
+                + Rest API</span>
+            </div>
+            <a href="https://lindsnicolewalker.github.io/dayVenture/" target="_blank">
+              <div class="button" id="dayventure">VIEW APP</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Match Pro</div>
+              <span class="highlight">
+                + JavaScript
+                + Node.js
+                + Express
+                + Materialize CSS3
+              </span>
+            </div>
+            <a href="https://celebrity-match.herokuapp.com/" target="_blank">
+              <div class="button" id="matchpro">VIEW APP</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix restapi" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">DayVenture</div>
+              <span class="highlight">
+                + JavaScript
+                + Ajax
+                + Firebase
+                + Rest API</span>
+            </div>
+            <a href="https://lindsnicolewalker.github.io/dayVenture/" target="_blank">
+              <div class="button" id="dayventure">VIEW APP</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="container flex">
+
+        <div class="header waypoint" data-animation="slide-in-left">BLOG</div><br><br><br><br>
+
+        <div class="flex row wrap">
+          <div class="flex row-gt-sm">
+            <a href="https://medium.com/@linds.nicolewalker17/ucb-coding-bootcamp-full-stack-flex-2018-cfc8daef9d8b"
+              target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in">
+                <div class="fade-wrap">
+                  <div class="label bold">Teamwork</div>
+                  <div class="date">2018 DECEMBER</div>
+                  <div class="thumb" id="thumb-1"></div>
+                  <div class="text">
+                    Trials and tribulations of my first experience building a front end web app with a team...
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".2s">
+                <div class="fade-wrap">
+                  <div class="label bold">Full Stack Web Dev</div>
+                  <div class="date">2019 JANUARY</div>
+                  <div class="thumb" id="thumb-2"></div>
+                  <div class="text">
+                    My first full stack web app...
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="flex row-gt-sm">
+            <a href="https://medium.com/@linds.nicolewalker17/no-degree-web-development-7d3418c70dbd" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".4s">
+                <div class="fade-wrap">
+                  <div class="label bold">Higher Education</div>
+                  <div class="date">2019 JANUARY</div>
+                  <div class="thumb" id="thumb-3"></div>
+                  <div class="text">
+                    For Web Development Careers, most programmers don't have relevant degrees...
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- technologies -->
+    <section id="technologies">
+      <footer>
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2TJLYTZ">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2QabRKr">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2UZPZE7">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2TLasft">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2BpEJuV">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2SpmVsJ">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2GkwhPX">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2Sxyazu">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2WSV0jo">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2RV6vmT">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2UQWR6p">
+        <img style="display:-ms-inline-flexbox; height:50px" src="https://bit.ly/2SMI8Mo">
+
+        <br><br><br>
+      </footer>
+    </section>
+
+    <footer>
+
+      <!-- 
+        HTML5
+        CSS3
+        JavaScript
+        Ajax
+        jQuery
+        React
+        Bootstrap
+        Node.js
+        SQL
+        MySQL
+        Firebase
+        JawsDB
+        Mongo
+        JSON
+        REST API
+        Git
+        Github
+        Heroku -->
+
+      <div class="info-box">
+        <div class="footnote">Lindsey Walker <span class="highlight">&copy;2019</span></div>
+      </div>
+      <br><br><br>
+    </footer>
+
   </div>
-</footer>
 
-<!--closing tags-->
+
 </body>
+
 </html>
