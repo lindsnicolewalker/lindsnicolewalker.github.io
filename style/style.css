@@ -79,12 +79,11 @@
   body {
     color: #fff;
     font-family: 'Raleway', sans-serif;
-
     text-align: center;
     margin: 0px;
     font-size: 12pt;
-    /* -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden; }
   
   #preload {
